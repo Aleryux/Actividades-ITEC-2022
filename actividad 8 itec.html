@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <table border="4">
+        <caption>Registro familiar</caption>
+        <tr>
+            <th>Nombre</th><th>Edad</th><th>Numero</th>
+        </tr>
+        <tr>
+            <td>Alex</td><td>24</td><td>43243233</td>
+        </tr>
+        <tr>
+            <td>Axel</td><td>43</td><td>534534543</td>
+        </tr>
+        <tr>
+            <td>Eugenia</td><td>12</td><td>65442342</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Datos personales</legend><br>
+    <form action="/" method="post">
+        <label for="nombre">Ingrese nombre:</label>
+        <input type="text" id="nombre" name="nombre" size="20" placeholder="ingrese su nombre">
+        <br>
+        <label for="nombre">Ingrese su edad:</label>
+        <input type="text" id="edad" name="edad" size="20" placeholder="ingrese su edad">
+        <br>
+        <label for="mail">Ingrese su mail:</label>
+        <input type="text" id="mail" name="mail" size="20" placeholder="ingrese su mail">
+        <br>
+        <label for="clave">Ingrese su clave:</label>
+        <input type="password" id="clave" name="clave" size="20" placeholder="ingrese su clave">
+        <br>
+        <label for="clave">Repetir su clave:</label>
+        <input type="password" id="clave" name="clave" size="20" placeholder="ingrese su clave">
+        <br>
+        <label for="comentarios">Cuentame sobre ti:</label>
+        <br>
+        <textarea name="comentarios" rows="5" cols="60"></textarea><br>
+        <br>
+    </fieldset>
+        <br>
+    <fieldset>
+        <legend>Experiencia</legend><br>
+        <label for="idioma">Elija su idioma:</label><br>
+        <input type="checkbox" name="idioma">Ingles<br>
+        <input type="checkbox" name="idioma">Portugues<br>
+        <input type="checkbox" name="idioma">Otro<br>
+        <br>
+        <label for="turno">Elija su horario:</label><br>
+        <input type="radio" name="turno" value="1">Mañana<br>
+        <input type="radio" name="turno" value="2">Tarde<br>
+        <input type="radio" name="turno" value="3">Noche<br>
+        <br>
+        <label for="nivel">Ingrese su nivel de experiencia</label>
+        <select name="nivel">
+            <option value="1">Basico</option>
+            <option value="2">Intermedio</option>
+            <option value="3">Avanzado</option>
+            </select>
+        <br>
+        <br>
+        <label for="nivel">Inserte foto: </label>
+        <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="foto">            
+        <br>
+        <br>
+        <label for="comentarios">Ingresar comentario:</label>
+        <br>
+        <textarea name="comentarios" rows="5" cols="60"></textarea><br>
+        <br>
+    </fieldset>
+        <input type="submit" value="enviar" >
+        <input type="reset" value="borrar">
+    </form>
+</body>
+</html>
