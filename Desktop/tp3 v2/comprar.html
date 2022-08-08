@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de compra</title>
+    <link href="/css/estilos.css" rel="stylesheet"/>
+</head>
+<body background="/img/fondo.jpg"></body>
+    <header>
+        <h1>Tienda</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="listado_tabla.html">Listado</a></li>
+            <li><a href="comprar.html">Formulario de compra</a></li>
+        </ul>
+        
+    </header>
+    <form>
+        <fieldset>
+            <legend>Datos Persona:</legend>
+            <label for="nombre">Nombre:</label><br/>
+            <input type="text" id="nombre" name="nombre" 
+                placeholder="Escribe tu nombre" required="true"/><br/>
+
+            <label for="apellido">Apellido:</label><br/>
+            <input type="text" id="apellido" name="apellido"
+                placeholder="Escribe tu apellido" required="true"/><br/>
+
+            <label for="email">Email:</label><br/>
+            <input type="email" id="email" name="email"/><br/> 
+
+            <label for="direccion">Direccion:</label><br/>
+            <input type="text" id="direccion" name="direccion"/><br/>
+            <label for="telefono">Telefono:</label><br/>
+            <input type="number" id="telefono" name="telefono"/><br/>
+                          
+            <label for="mediodepago">Medio de pago:</label><br/>
+            <select id="mediodepago" name="mediodepago">
+                <option value="mercadopago">Mercado Pago</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="visa" selected="true">Visa</option>
+            </select><br/>
+            </textarea><br/>
+
+            <br/>
+            <input type="submit" value="Enviar"/>           
+        </fieldset>    
+    </form>
+</body>
+</html>
